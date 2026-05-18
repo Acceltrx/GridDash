@@ -335,9 +335,15 @@ top_bar.bind("<ButtonPress-1>", start_drag)
 top_bar.bind("<B1-Motion>", do_drag)
 
 try:
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    project_root = os.path.dirname(script_dir)
-    icon_path = os.path.join(project_root, 'assets', 'GridDash.ico')
+    if getattr(sys, 'frozen', False):
+        # If running as .exe, PyInstaller extracts to a temp _MEIPASS folder
+        base_path = getattr(sys, '_MEIPASS', os.path.dirname(sys.executable))
+        icon_path = os.path.join(base_path, 'assets', 'GridDash.ico')
+    else:
+        # If running as a normal .pyw script
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        project_root = os.path.dirname(script_dir)
+        icon_path = os.path.join(project_root, 'assets', 'GridDash.ico')
     
     topbar_icon_img = Image.open(icon_path).resize((28, 28), Image.Resampling.LANCZOS)
     topbar_icon_tk = ImageTk.PhotoImage(topbar_icon_img)

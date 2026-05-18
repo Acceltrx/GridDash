@@ -2,7 +2,7 @@
 
 # 🎛️ GridDash
 
-<img width="862" height="367" alt="GridDash UI Snapshot" src="https://via.placeholder.com/862x367.png?text=GridDash+HUD+Preview" />
+<img width="1054" height="776" alt="image" src="https://github.com/user-attachments/assets/37ae6b05-ee3a-460a-8403-03f96ff872e0" />
 
 <br>
 

@@ -1,0 +1,51 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# =========================
+# Virtual Environments
+# =========================
+venv/
+.venv/
+env/
+.env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# =========================
+# Build & Distribution (PyInstaller)
+# =========================
+build/
+dist/
+*.spec
+*.manifest
+
+# =========================
+# Local App Data & Logs
+# =========================
+# Ignores local configs/logs if generated in the root during testing
+*.log
+debug_log.txt
+griddash_debug_log.txt
+griddash_config.json
+gridflow_status.json
+
+# =========================
+# IDEs & Editors
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS Generated Files
+# =========================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store

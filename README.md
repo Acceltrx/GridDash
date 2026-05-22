@@ -44,7 +44,7 @@ Requires Python 3.x.
 
 ```bash
 # Clone the repository
-git clone https://github.com/YourUsername/GridDash.git
+git clone https://github.com/Acceltrx/GridDash.git
 cd GridDash
 
 # Install dependencies
